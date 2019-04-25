@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box">
     <AtricleNav></AtricleNav>
     <router-view></router-view>
   </div>
@@ -15,4 +15,5 @@ export default {
 </script>
 
 <style>
+
 </style>

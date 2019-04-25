@@ -9,27 +9,32 @@ import Article from '@/components/Article/Article'
 Vue.use(Router)
 
 const routes = [{
-  path: '/',
-  name:'Panel',
-  component:Panel,
-  children: [
-    {
-      path: '/channel/:id(\\d+)',
-      name:'channel',
-      component: Channel
-    },
-    {
-      path: '/article/:id(\\d+)',
-      name:'article',
-      component: Article
-    },
+    path: '/',
+    redirect: '/channel/1'
+  },
+  {
+    path: '/',
+    name: 'Panel',
+    component: Panel,
+    children: [{
+        path: '/channel/:id(\\d+)',
+        name: 'channel',
+        component: Channel
+      },
+      {
+        path: '/article/:id(\\d+)',
+        name: 'article',
+        component: Article
+      },
 
-  ]
+    ]
 
-}]
+  },
+
+]
 
 const router = new Router({
-  linkExactActiveClass:'active',
+  linkExactActiveClass: 'active',
   routes
 })
 export default router
