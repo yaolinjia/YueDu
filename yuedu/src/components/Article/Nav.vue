@@ -3,7 +3,6 @@
     <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">
-          <!-- <img alt="Brand" src="../../assets/logo.png"> -->
           悦读 FM
         </a>
       </div>
@@ -31,8 +30,8 @@
         </div>
         <span class="liner"></span>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">登录</a></li>
-        <li><a href="#">注册</a></li>
+        <li><router-link :to="{name:'logon'}">登录</router-link></li>
+        <li><router-link :to="{name:'register'}">注册</router-link></li>
       </ul>
     </div>
   </nav>
@@ -77,5 +76,10 @@ nav {
 .search{
   margin-left:auto;
 }
-
+.navbar-nav a:hover{
+color: red !important;
+}
+.navbar-nav a{
+    transition: all 0.3s linear;
+}
 </style>

@@ -5,7 +5,8 @@ import Router from 'vue-router'
 import Panel from '@/components/Article/Panel'
 import Channel from '@/components/Article/Channel'
 import Article from '@/components/Article/Article'
-
+import logon from '@/components/logon'
+import register from '@/components/register'
 Vue.use(Router)
 
 const routes = [{
@@ -25,6 +26,16 @@ const routes = [{
         path: '/article/:id(\\d+)',
         name: 'article',
         component: Article
+      },
+      {
+        path: '/logon',
+        name: 'logon',
+        component: logon
+      },
+      {
+        path: '/register',
+        name: 'register',
+        component: register
       },
 
     ]

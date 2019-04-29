@@ -56,7 +56,8 @@ export default {
 .right-box > div {
   margin-bottom: 30px;
   border-radius:5px;
-box-shadow:1px 1px 10px #ccc;
+  box-shadow: 5px 5px 8px #ccc;
+
 }
 
 .list-group p {
